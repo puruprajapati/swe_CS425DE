@@ -1,5 +1,5 @@
-# swe_CS425DE
-MIU AirBnB
+# MIU AirBnB
+
 
 Project for Software Engineering
 
