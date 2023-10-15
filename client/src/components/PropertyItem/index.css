@@ -1,0 +1,26 @@
+.card-item {
+  margin: 20px;
+  cursor: pointer;
+}
+.card-item:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.title {
+  font-size: 20px;
+}
+.sub-title {
+  margin: 0px;
+  font-size: 14px;
+}
+.card-body p {
+  margin: 0px;
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+}
+.card-body p:first-child {
+  padding-left: 0px;
+}
+.card-action button {
+  width: 100%;
+}

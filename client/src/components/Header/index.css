@@ -1,0 +1,28 @@
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-text {
+  text-decoration: none;
+  color: #394149;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.header .right {
+  display: flex;
+  flex-direction: row;
+  right: 50px;
+  top: 10px;
+  position: absolute;
+}
+.header .right div {
+  margin-right: 20px;
+}

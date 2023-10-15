@@ -1,0 +1,93 @@
+.payment section {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 112px;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+.payment .product {
+  display: flex;
+}
+.payment .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.payment p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #242d60;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.payment img {
+  border-radius: 6px;
+  width: 100%;
+}
+.payment h3,
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #242d60;
+  margin: 0;
+}
+.payment h5 {
+  opacity: 0.5;
+}
+.payment button {
+  height: 36px;
+  background: #556cd6;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+  border: 0;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.6;
+  border-radius: 0 0 6px 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+}
+.payment button:hover {
+  opacity: 0.8;
+}
+.payment .card-item {
+  margin: 20px;
+}
+.payment .title {
+  font-size: 20px;
+}
+.payment .sub-title {
+  margin: 0px;
+  font-size: 14px;
+}
+.payment .card-body p {
+  margin: 0px;
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+}
+.payment .card-body p:first-child {
+  margin-top: 20px;
+  padding-left: 0px;
+}
+.payment .card-action button {
+  width: 100%;
+}
+.payment .city {
+  color: black;
+  opacity: 1;
+}
