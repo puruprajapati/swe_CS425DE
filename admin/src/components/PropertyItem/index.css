@@ -1,0 +1,22 @@
+.card-item {
+  /* margin: 20px; */
+}
+.title {
+  font-size: 20px;
+}
+.sub-title {
+  margin: 0px;
+  font-size: 14px;
+}
+.card-body p {
+  margin: 0px;
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+}
+.card-body p:first-child {
+  padding-left: 0px;
+}
+.card-action button {
+  width: 100%;
+}
