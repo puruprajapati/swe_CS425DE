@@ -1,0 +1,90 @@
+#user for custom one
+ckc:
+  realm: pmp-realm
+  auth-server-url: http://localhost:8080
+  resource: pmp-client
+  secret: Bhw120rFFBSVLciCuictWw5wOuSbJmu2
+
+keycloak:
+  realm: pmp-realm
+  auth-server-url: http://localhost:8080
+  ssl-required: external
+  #keycloak resource is the client ID
+  resource: pmp-client
+  use-resource-role-mappings: true
+  #The line below will prevent redirect to login page
+
+  bearer-only: true
+  credentials:
+    secret: Bhw120rFFBSVLciCuictWw5wOuSbJmu2
+  public-client: true
+
+
+#  securityConstraints:
+#    - authRoles: [ user, admin ]
+#      securityCollections:
+#        - name: API Private Data
+#          patterns: [ '/todos/search/my-todos/*' ]
+#    - authRoles: [ admin ]
+#      securityCollections:
+#        - name: API
+#          patterns: [ '/todos/*' ]
+
+spring:
+  application:
+    name: spring-security
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+  mail:
+    host: smtp.gmail.com
+    username: pms.waa@gmail.com
+    password: ndljtyuetxexsbjv   #after 2 step verification, app->generate password
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8081
+  netty:
+    connection-timeout: 6000
+
+stripe:
+  secret:
+    key: sk_test_51KzpNaCqGP5n20NTpJDEU8NpzniPpievQ6SG6yo6ino2zQeyHFKb9vyjjw8cy1Ta0drikBr1uDWx5O4BOF5b4AAE00Wsk7RJng
+  public:
+    key: pk_test_51KzpNaCqGP5n20NTsGZbvkXNOZ0JZ3DTDuoy6hSfzcL4ZOgg3QGkdy6VjApL4da7u50kluqgzyyC057DCbfP0oMt00HGX3B3Zj
+  webhook:
+    secret: whsec_3304e18405b9c6a1d3c716c4b40e8d93645a2502e3b71251906193dec7174c05
+
+client:
+  domain: http://localhost:3000
+  admin: http://localhost:8082
+
+###########################################################################
+# File upload                                                             #
+###########################################################################
+file:
+  upload-dir: ./src/main/resources/static
+  public: /src/main/resources/static
